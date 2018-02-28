@@ -1,28 +1,65 @@
 import React, { Component } from 'react';
-import {Toolbar, ToolbarGroup, ToolbarSeparator, ToolbarTitle} from 'material-ui/Toolbar';
-import SvgIcon from 'material-ui/SvgIcon';
-import coding from '../images/coding.svg';
-import ActionHome from 'material-ui/svg-icons/action/home';
+import FloatingActionButton from 'material-ui/FloatingActionButton';
+import ContentAdd from 'material-ui/svg-icons/content/add';
+import ContentMinus from 'material-ui/svg-icons/content/undo';
+import '../css/dailyGoal.css';
 
-const HomeIcon = (props) => (
-  <SvgIcon {...props}>
-    <path d={coding} />
-  </SvgIcon>
-);
 
 class CommitPicker extends Component {
   render() {
     return (
-      <div>
-        <ActionHome />
-         <Toolbar>
-          <ToolbarGroup>
-            <HomeIcon />
-          </ToolbarGroup>
-          <ToolbarGroup>
-            
-          </ToolbarGroup>
-        </Toolbar>
+      <div className="container">
+
+        <div className="code">
+          <div className="codeIcon"></div>
+          <div className="codeAddMinus">
+            <div>
+              <FloatingActionButton className="add">
+                <ContentAdd />
+              </FloatingActionButton>
+            </div>
+            <div className="todayCode"></div>
+            <div>
+              <FloatingActionButton className="minus">
+                <ContentMinus />
+              </FloatingActionButton>
+            </div>
+          </div>
+        </div>
+
+        <div className="read">
+          <div className="readIcon"></div>
+          <div className="readAddMinus">
+            <div>
+              <FloatingActionButton className="add">
+                <ContentAdd />
+              </FloatingActionButton>
+            </div>
+            <div className="todayRead"></div>
+            <div>
+              <FloatingActionButton className="minus">
+                <ContentMinus />
+              </FloatingActionButton>
+            </div>
+          </div>
+        </div>
+
+        <div className="math">
+          <div className="mathIcon"></div>
+          <div className="mathAddMinus">
+            <div>
+              <FloatingActionButton className="add">
+                <ContentAdd />
+              </FloatingActionButton>
+            </div>
+            <div className="todayMath"></div>
+            <div>
+              <FloatingActionButton className="minus">
+                <ContentMinus />
+              </FloatingActionButton>
+            </div>
+          </div>
+        </div>
       </div>
     );
   }

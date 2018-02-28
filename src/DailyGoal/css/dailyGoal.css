@@ -1,0 +1,63 @@
+.container {
+    display: flex;
+}
+
+.container > div {
+    flex: 1; /*grow*/
+}
+
+.codeAddMinus {
+    display: flex;
+}
+
+.codeAddMinus > div {
+    flex: 1; /*grow*/
+}
+
+.codeIcon {
+    width: 100%;
+    margin-bottom: 10px;
+    height: 200%;
+    background: url("../images/coding.svg") no-repeat;
+    background-position: center center;
+}
+
+.readAddMinus {
+    display: flex;
+}
+
+.readAddMinus > div {
+    flex: 1; /*grow*/
+}
+
+.readIcon {
+    width: 100%;
+    margin-bottom: 10px;
+    height: 200%;
+    background: url("../images/books.svg") no-repeat;
+    background-position: center center;
+}
+
+.mathAddMinus {
+    display: flex;
+}
+
+.mathAddMinus > div {
+    flex: 1; /*grow*/
+}
+
+.mathIcon {
+    width: 100%;
+    margin-bottom: 10px;
+    height: 200%;
+    background: url("../images/abacus.svg") no-repeat;
+    background-position: center center;
+}
+
+.add {
+    float: right;
+}
+
+.minus {
+    float: left;
+}
